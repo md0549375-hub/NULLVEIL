@@ -48,7 +48,10 @@
         "y_dist": 4,
         "y_offset": -0.5,
         "interval": 1,
-        "hover_height": [1, 3]
+        "hover_height": {
+          "min": 1,
+          "max": 3
+        }
       },
       "minecraft:behavior.look_at_player": {
         "priority": 8,
