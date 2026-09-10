@@ -4,7 +4,7 @@
     "name": "NULLVEIL",
     "description": "NULLVEIL - psychological horror add-on. Resource Pack.",
     "uuid": "57a6f339-7379-4092-8e9d-68c0fe4f104e",
-    "version": [0, 1, 0],
+    "version": [0, 2, 0],
     "min_engine_version": [1, 26, 45]
   },
   "modules": [
@@ -12,7 +12,7 @@
       "description": "NULLVEIL resources",
       "type": "resources",
       "uuid": "ee216141-15bd-4006-9069-1fa32c8616ad",
-      "version": [0, 1, 0]
+      "version": [0, 2, 0]
     }
   ]
 }

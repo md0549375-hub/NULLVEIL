@@ -1,2 +1,4 @@
 pack.name=NULLVEIL
 pack.description=A psychological-horror add-on built on uncertainty, imitation, memory, and trust.
+entity.nullveil:echo.name=Echo
+item.spawn_egg.entity.nullveil:echo.name=Echo Spawn Egg

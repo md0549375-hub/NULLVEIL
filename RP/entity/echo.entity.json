@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "nullveil:echo",
+      "materials": { "default": "entity_alphablend" },
+      "textures": { "default": "textures/nullveil/entity/echo" },
+      "geometry": { "default": "geometry.echo" },
+      "render_controllers": ["controller.render.echo"],
+      "scripts": {
+        "animate": ["idle"]
+      },
+      "animations": {
+        "idle": "animation.echo.idle"
+      },
+      "spawn_egg": {
+        "base_color": "#11141A",
+        "overlay_color": "#8DEBFF"
+      }
+    }
+  }
+}

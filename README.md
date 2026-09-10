@@ -6,7 +6,7 @@ A Minecraft Bedrock Edition psychological-horror add-on.
 
 ## Status
 
-**V0.1 -- Foundation.** BP/RP manifests linked, CI validates JSON and packages a `.mcaddon` on every push. No entities yet.
+**V0.2 -- Echo.** Echo entity is in-world: hovers, hidden-when-invisible, gentle idle bob + pulsing core animation, alpha-blended obsidian shell over a cyan core. No Fear/Corrupted states, no player-bonding, no voice yet -- those follow in V0.3.
 
 ## Target
 
@@ -21,3 +21,7 @@ A Minecraft Bedrock Edition psychological-horror add-on.
 ## Build
 
 CI validates all JSON and packages `NULLVEIL.mcaddon` as a downloadable artifact on every push (`.github/workflows/validate.yml`). No local build step is required -- install the packaged `.mcaddon` directly on Android.
+
+## Testing Echo
+
+`/summon nullveil:echo` in a world with cheats on, or find the Echo spawn egg in the creative inventory.
