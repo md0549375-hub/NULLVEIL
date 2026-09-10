@@ -1,0 +1,28 @@
+name: Validate & Package
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate JSON syntax
+        run: |
+          set -e
+          find BP RP -name "*.json" -print0 | xargs -0 -n1 python3 -m json.tool > /dev/null
+
+      - name: Package .mcaddon
+        run: |
+          mkdir -p dist
+          (cd BP && zip -r -X ../dist/NULLVEIL_BP.mcpack .)
+          (cd RP && zip -r -X ../dist/NULLVEIL_RP.mcpack .)
+          (cd dist && zip -X NULLVEIL.mcaddon NULLVEIL_BP.mcpack NULLVEIL_RP.mcpack)
+
+      - name: Upload .mcaddon artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NULLVEIL-mcaddon
+          path: dist/NULLVEIL.mcaddon

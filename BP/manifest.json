@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "NULLVEIL",
+    "description": "NULLVEIL - psychological horror add-on. Behavior Pack.",
+    "uuid": "d34ba94d-cc38-4fa6-acd8-f82650eaaeb6",
+    "version": [0, 1, 0],
+    "min_engine_version": [1, 26, 45]
+  },
+  "modules": [
+    {
+      "description": "NULLVEIL behavior logic",
+      "type": "data",
+      "uuid": "0791a845-ecec-4819-878b-cc9a6df7012b",
+      "version": [0, 1, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "57a6f339-7379-4092-8e9d-68c0fe4f104e",
+      "version": [0, 1, 0]
+    }
+  ]
+}

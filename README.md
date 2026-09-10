@@ -1,23 +1,23 @@
 # NULLVEIL
 
-A production-grade Minecraft Java Edition (NeoForge) psychological-horror mod.
+A Minecraft Bedrock Edition psychological-horror add-on.
 
 > "You are not afraid of what is there. You are afraid that what you know is wrong."
 
 ## Status
 
-**V0.1 -- Foundation.** NeoForge project scaffold, config, and CI build are online. No gameplay systems yet.
+**V0.1 -- Foundation.** BP/RP manifests linked, CI validates JSON and packages a `.mcaddon` on every push. No entities yet.
 
 ## Target
 
-- Minecraft: 26.2
-- NeoForge: 26.2.0.82
-- Java: 25
+- Minecraft: Bedrock 1.26.45+
+- Format: manifest format_version 2 (stable)
+
+## Structure
+
+- `BP/` -- Behavior Pack
+- `RP/` -- Resource Pack
 
 ## Build
 
-```
-./gradlew build
-```
-
-CI builds run automatically via GitHub Actions on every push (`.github/workflows/build.yml`).
+CI validates all JSON and packages `NULLVEIL.mcaddon` as a downloadable artifact on every push (`.github/workflows/validate.yml`). No local build step is required -- install the packaged `.mcaddon` directly on Android.
